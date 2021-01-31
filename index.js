@@ -5,7 +5,6 @@ const moveForwardMonth = document.querySelector('.date-picker-month-go-forward')
 const dayNamesTable = document.querySelector('.date-picker-table');
 const dayInputText = document.querySelector('.date-picker-space');
 const datePickerBlock = document.querySelector('.date-picker-block');
-const datePickerWrapper = document.querySelector('.date-picker-wrapper');
 
 const monthNames = ['January', 'February', 'March', 'April',
 				'May', 'June', 'July', 'August', 'September',
@@ -28,6 +27,12 @@ function numDaysInMonth(date) {
 }
 
 function fillMonth(date) {
+				/**
+				 * Starts to fill an array with the dates
+				 * needed for filling up the date picker.
+				 *
+				 * This function fills from the current month.
+				 */
 				let _date = new Date(date.getTime());
 				let eachDayInMonth = [];
 				const total = numDaysInMonth(_date);
@@ -64,8 +69,8 @@ function fillToStartDate(date) {
 }
 function fillToEndDate(date) {
 				/**
-				 * Add the days from the previous month
-				 * until we have a Monday as our first date
+				 * Add the days from the next month
+				 * until we have a Sunday as our last date
 				 */
 				let _date = new Date(date.getTime());
 				let daysInNextMonth = [];
