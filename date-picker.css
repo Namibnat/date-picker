@@ -1,0 +1,64 @@
+/* Date Picker CSS */
+.date-picker-wrapper {
+				position: relative;
+}
+.date-picker-wrapper form {
+				width: 100%;
+				display: block;
+}
+.date-picker-block {
+  display: none;
+	border: 1px solid #111;
+	display: none;
+	background-color: #fff;
+	position: absolute;
+	top: 2rem;
+}
+.date-picker-table {
+	margin: 0.3em;
+	padding: 0;
+	border-collapse: collapse;
+}
+.date-picker-table tr {
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+.date-picker-table td, .date-picker-table th {
+	border: 1px solid #444;
+	padding: 0.1em 0.3em;
+	margin: 0;
+	text-align: center;
+}
+.date-picker-table th {
+	border-color: #000;
+}
+				
+.date-picker-month-and-year {
+	display: inline-block;
+	padding: 0.4rem 0.9rem 0.2rem 0.9rem;
+}	
+.date-picker-move-back-month {
+	display: inline-block;
+}	
+.date-picker-month-go-back {
+	cursor: pointer;
+}
+.date-picker-month-holder {
+	display: inline-block;
+}
+.date-picker-move-forward-month {
+	display: inline-block;
+}	
+.date-picker-month-go-forward {
+	cursor: pointer;
+}
+.date-picker-month-year {
+	text-align: center;
+}
+.date-picker-current {
+	background-color: #ddd;
+}
+.date-picker-current a {
+	cursor: pointer;
+}
